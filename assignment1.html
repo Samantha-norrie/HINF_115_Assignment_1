@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Adult BMI Calculator</title>
+    
+</head>
+<body>
+    <h1>Adult BMI Calculator</h1>
+    <div class="calculator">
+        <label for="patient-age">Age (yr)</label>
+        <input id="patient-age" type="text" name="age" value="">
+        <br />
+
+        <span class="patient-race">Race: </span>
+        <input type="radio" name="patient-race" id="patient-race1" value="black">
+        <label for="patient-race1">Black</label>
+        <input type="radio" name="patient-race" id="patient-race2" value="other">
+        <label for="patient-race2">Other/Prefer not to specify</label>
+        <br />
+
+        <label for="weight">Weight (kg)</label>
+        <input id="patient-weight" type="text" name="weight" value="">
+        <br />
+
+        <label for="height">Height (m)</label>
+        <input id="patient-height" type="text" name="height" value="">
+        <br />
+
+        <button type="button" id="Calculate" name="Calculate" onclick="calcBMI()">Calculate BMI</button>
+    </div>
+    <p class="result-statement">
+        <span id="statement"></span>
+    </p>
+    <h3 class="result" id="result"></h3>
+    <div>
+        <h3>BMI Calculator Limitations</h3>
+        <p>
+            While BMI can be a good baseline for determining one's health, there are some limitations to the
+            accuracy of the calculation. Individuals with a muscular build (ex. athletes) will likely receive
+            an inflated BMI result while individuals who are older or have muscle mass may receive a deflated score 
+            (Assessing Your Weight and Health Risk, 2022). 
+        </p>
+        <cite>
+            <a>National Heart, Lung, and Blood Institute. (2022) Assessing Your Weight and Health Risk. nih</a>
+            <a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/risk.htm">
+                URL
+            </a>
+        </cite>
+    </div>
+    <script type="text/javascript" src="bmi.js"></script>
+</body>
+</html>
